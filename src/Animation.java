@@ -112,37 +112,9 @@ public class Animation extends MyFrame{
 		
 		//【EX問題２】
 		
-		while(true) {
-			int x=50;
-			int y=50;
-		while(x<=180) {
-			clear();
-			setColor(0,128,0);
-			fillRect(x,y,10,100);
-			x+=5;
-			sleep(0.03);
-		}
-		while(y<=180) {
-			clear();
-			setColor(0,128,0);
-			fillRect(x,y,10,100);
-			y+=5;
-			sleep(0.03);
-		}
-		while(x>=50) {
-			clear();
-			setColor(0,128,0);
-			fillRect(x,y,10,100);
-			x-=5;
-			sleep(0.03);
-		}
-		while(y<=240) {
-			clear();
-			setColor(0,128,0);
-			fillRect(x,y,10,100);
-			y+=5;
-			sleep(0.03);
-		}
-		}
+		
+		
+		
+		
 	}
 }
