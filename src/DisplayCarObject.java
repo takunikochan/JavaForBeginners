@@ -10,9 +10,7 @@ public class DisplayCarObject extends MyFrame{
 		car2.draw(this);
 		car1.x+=10;
 		car2.x-=10;
-		sleep(0.03
-				
-				);
+		sleep(0.03);
 		}
 	}
 
