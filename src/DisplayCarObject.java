@@ -1,6 +1,7 @@
 
 public class DisplayCarObject extends MyFrame{
 	public void run() {
+		/*
 		Car car1=new Car(50,50);
 		Car car2=new Car(250,200);
 		
@@ -12,6 +13,7 @@ public class DisplayCarObject extends MyFrame{
 		car2.x-=10;
 		sleep(0.03);
 		}
+	    */
 	}
-
+        
 }

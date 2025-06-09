@@ -1,6 +1,7 @@
 
 public class Car {
 	int x,y,vx,vy;
+	
 	public Car(int x,int y,int vx,int vy){
 		this.x=x;
 		this.y=y;
@@ -14,9 +15,14 @@ public class Car {
 		frame.fillRect(x,y+30,90,20);
 	}
 	public void move() {
-		x+=vx;
+		x+=vx++; //インクリメント(EX2)
 		y+=vy;
-		
+	
+		//車が戻ってくる(EX1)
+		if(x > 450) 
+		{
+			x -= 500;
+		}
 	}
 	
 	
