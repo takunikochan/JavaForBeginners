@@ -5,7 +5,7 @@ public class Start {
 		// TODO 自動生成されたメソッド・スタブ
 		System.out.println("コメント");
 		//MyFrame frame = new Animation();
-		MyFrame f=new DisplayCarVector();
+		MyFrame f=new DisplayCarsTrains();
 
 	}
 

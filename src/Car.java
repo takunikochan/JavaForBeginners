@@ -1,29 +1,24 @@
 
-public class Car {
-	int x,y,vx,vy;
-	
+public class Car extends Vehicle{
+
 	public Car(int x,int y,int vx,int vy){
-		this.x=x;
-		this.y=y;
-		this.vx=vx;
-		this.vy=vy;
+		super(x, y, vx, vy);
 	}
-	public void draw(MyFrame frame) {
-		frame.fillOval(x+10,y+50,23,23);
-		frame.fillOval(x+55,y+50,23,23);
-		frame.fillRect(x+20,y,50,30);
-		frame.fillRect(x,y+30,90,20);
-	}
-	public void move() {
-		x+=vx++; //インクリメント(EX2)
-		y+=vy;
 	
-		//車が戻ってくる(EX1)
-		if(x > 450) 
-		{
+	public void draw(MyFrame frame) {
+		frame.fillRect(x+20, y,    40, 20);
+		frame.fillRect(x,    y+20, 80, 20);
+		frame.fillOval(x+10, y+40, 20, 20);
+		frame.fillOval(x+50, y+40, 20, 20);
+	}
+	
+	public void move() {
+		x+=vx; //++で、速くなる(EX2)
+		y+=vy;
+		
+		if(x > 450) {
 			x -= 500;
 		}
 	}
-	
 	
 }
